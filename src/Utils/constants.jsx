@@ -1,0 +1,1 @@
+export const news_api="https://news-api-nitesh.onrender.com/news/";
