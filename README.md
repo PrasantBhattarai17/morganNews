@@ -1,12 +1,7 @@
-# React + Vite
+ ### almost every thing is working properly,incase kei modify garna man lagyo vaney,here is what's left for you pithey boy.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+ - 1.search functionality only implements the searching based on the global state of news,can be modified to also implement searching via api as well.
+ - 2.responsiveness yet to be done
+ - 3.when you go to details page, and refresh the page, the state vanishes away resulting blank page(default phenoomenon), so localStorage ma save garna sakchau,incase - if refresh garda ni persist garauna man cha vaney.if garenau vaney detailed page ma refresh huda could encounter error(optional chaining haldeu chill maa)ani feri - sidebar bata back aunu parney huncha
+ - 4.ahile dang dung ekaichoti loads of cards(around 98) ekaichoti render vacha, teslai pani load-more type shit banauna sakchau(yes to be halka cool-tara frontend only implementation huncha)
+ - 5.useNews hook ma dependency array magi racha,getNews function lai useCallback ma halera dep array ma haldida huncha...newsData lai pani haal vani ra hola lint le baatho hudai matlab vayena, it works then it works.
