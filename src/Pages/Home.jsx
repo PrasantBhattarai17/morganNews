@@ -40,14 +40,13 @@ const Home = () => {
     );
 
   return (
-    <div className="p-10 w-full h-full">
-      <p className="text-4xl font-bold font-mono text-center text-gray-700">
+    <div className="p-5 md:p-10 w-full h-full">
+      <p className="text-2xl md:text-4xl font-bold font-mono text-center text-gray-700">
         All the News you want is at one stop now. Enjoy being enlightened!
       </p>
 
       <div className="mt-5">
-        {/* Search Bar */}
-        <div className="w-1/2 mx-auto flex justify-center items-center gap-2 relative">
+        <div className="w-full md:w-1/2 mx-auto flex justify-center items-center gap-2 relative">
           <input
             className="w-full rounded-lg bg-white px-6 py-4 relative"
             type="text"
@@ -58,7 +57,6 @@ const Home = () => {
           <BiSearch className="text-4xl absolute right-3 top-3 cursor-pointer" />
         </div>
 
-        {/* News Cards */}
         {filteredData?.length > 0 ? (
           <div className="flex gap-5 flex-wrap justify-center mt-10">
             {filteredData?.map((news, idx) => (

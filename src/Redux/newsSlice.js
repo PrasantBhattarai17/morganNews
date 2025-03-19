@@ -8,7 +8,8 @@ const newsSlice = createSlice({
          trending:null,
          sports:null,
          business:null,
-         politics:null
+         politics:null,
+         category:false,
        },
        reducers:{
          addTrendingNews:(state,action)=>{
@@ -23,9 +24,13 @@ const newsSlice = createSlice({
          addPoliticsNews:(state,action)=>{
             state.politics=action.payload;
          }
+         ,
+         toggleCategory:(state,action)=>{
+            state.category=!state.category;
+        }
        }
 })
 
-export const {addTrendingNews,addSportsNews,addBusinessNews,addPoliticsNews} = newsSlice.actions;
+export const {addTrendingNews,addSportsNews,addBusinessNews,addPoliticsNews,toggleCategory} = newsSlice.actions;
 
 export const newsReducer = newsSlice.reducer;

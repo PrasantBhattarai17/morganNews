@@ -5,8 +5,8 @@ const NewsCard = ({news}) => {
 
   return (
     <Link to={`/${news.title}`}>
-    <div className='w-sm bg-gray-100 h-[30rem] rounded-xl shadow-md shadow-black/20 p-4 hover:bg-blue-100/60 cursor-pointer hover:-translate-y-2 transition-transform ease-in-out duration-300'>
-      <img src={news.urlToImage} alt='photo' className='w-full min-h-1/2 max-h-1/2 rounded-xl'/>
+    <div className='md:z-0 -z-20 w-full sm:w-80 bg-gray-100 h-auto rounded-xl shadow-md shadow-black/20 p-4 hover:bg-blue-100/60 cursor-pointer hover:-translate-y-2 transition-transform ease-in-out duration-300'>
+      <img src={news.urlToImage} alt='photo' className='w-full h-auto rounded-xl'/>
       <div className='flex justify-between text-sm text-gray-500 font-bold mt-2'>
         <div>
             <p>author:</p>
